@@ -1,0 +1,193 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", "xml:lang" => "en"}
+  %head
+    %title Enrico Genauck
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
+    %link{:href => "http://cachedcommons.org/cache/960/0.0.0/stylesheets/960-min.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    :javascript
+      var ADAPT_CONFIG = {
+        path: '/stylesheets/',
+        dynamic: true,
+
+        // First range entry is the minimum.
+        // Last range entry is the maximum.
+        // Separate ranges by "to" keyword.
+        range: [
+          '0px    to 760px  = mobile.css',
+          '760px            = 960.min.css'
+        ]
+      };
+    %script{:src => "/javascripts/adapt.min.js"}
+    
+    :css
+      body {
+        background: #B3B9C7;
+        margin: 0px;
+        font-family: Helvetica Neue, Arial, sans-serif;
+        line-height: 1.5em;
+        font-size: 16px;
+        color: #72361b;
+      }
+      
+      small {
+        font-size: 100%;
+        color: #757982;
+      }
+      
+      .content.dark, .footer.dark {
+        border-top: 1px solid #aaafbd;
+        background: #b1b7c4;      
+      }      
+      .content.light {
+        border-top: 1px solid #aaafbd;
+        background: #B3B9C7;      
+      }
+      
+      .content, .footer { overflow: hidden; }
+      .content { padding: 60px 0 60px 0; }
+
+      h1, h2, h3 {
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+      
+      h1 {
+        font-size: 38px;
+        margin-top: 40px;
+        margin-bottom: 0;
+      }
+      h2 {
+        margin-top: 10px;
+        font-size: 22px;
+      }
+      
+      .footer { padding: 20px 0 20px 0; }
+
+      .footer .address a { display: block; margin-top: 20px; }
+      .footer h1 { color: #8D919C; margin: 35px 0 0 0; font-size: 48px; }
+
+      cite {
+        margin: 70px 0 0 0;
+        font-size: 16px;
+      }
+      .author {margin: 20px 0 0 0; display: block;}
+      
+      h1, h2 {
+        color: #526700;
+        letter-spacing: 0.08em;      
+      }
+      
+      a { color: #1f5caa; text-decoration: none; }
+      a:hover, a:active, a:hover .neutral { color: #252525; }
+      
+      .header {
+        background: #E6EAF3 url("/images/drops.png") no-repeat 308px 0px; /* for non-css3 browsers */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E6EAF3', endColorstr='#B3B9C700'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#E6EAF3), to(#B3B9C7)); /* for webkit browsers */
+        background: -moz-linear-gradient(top,  #E6EAF3,  #B3B9C7); /* for firefox 3.6+ */
+      }
+      .header > div {
+        background: url("/images/drops.png") no-repeat 308px 0px;
+        overflow: hidden;
+        height: 448px;
+      }
+
+      .tweet { min-height: 100px; }
+      .tweet.tag { color: #526700; }
+
+      .logo {
+        display: block;
+        height: 250px;
+      }
+
+      .logo.twitter a {
+        display: block;
+        margin-left: 42px;
+        margin-top: 51px;
+        background: url('/images/twitter.png') no-repeat center 0px;
+        width: 216px;
+        height: 148px;
+        overflow: hidden;
+      }
+      .logo.twitter a:hover { background: url('/images/twitter.png') no-repeat center -148px; }
+
+      .logo.github a {
+        display: block;
+        margin-left: 42px;
+        margin-top: 30px;
+        background: url('/images/octocat.png') no-repeat center 0px;
+        width: 216px;
+        height: 190px;
+        overflow: hidden;
+      }
+      .logo.github a:hover { background: url('/images/octocat.png') no-repeat center -190px; }
+
+      .commit p { margin-top: 5px; }
+
+  %body
+    .header
+      .container_12
+        %h1.grid_12 Enrico Genauck
+
+        %cite.grid_4
+          %strong Beauty
+          is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate
+          %strong defense against complexity
+          = '.'
+          %span.author — David Gelernter
+
+    .content.dark
+      .container_12
+        .logo.twitter.grid_4
+          %a{:href => "http://www.twitter.com/enricogenauck"}
+
+        - @tweets.each do |tweet|
+          %p.tweet.grid_4= tweet
+
+    .content.light
+      .container_12
+        .grid_8
+          .grid_8
+            .commit.grid_4.alpha
+              = haml :_commit, :locals => { :commit => @commits[0] }
+            .commit.grid_4.omega
+              = haml :_commit, :locals => { :commit => @commits[1] }
+          .grid_8
+            .commit.grid_4.alpha
+              = haml :_commit, :locals => { :commit => @commits[2] }
+            .commit.grid_4.omega
+              = haml :_commit, :locals => { :commit => @commits[3] }
+
+        .logo.github.grid_4
+          %a{:href => "https://github.com/enricogenauck"} &nbsp;
+
+    .footer.dark
+      .container_12
+        .grid_12
+          .grid_12
+            .grid_4.alpha
+              %h1 Impressum
+              / %img{:src => "/images/photo.png"}
+            .grid_4.address
+              Enrico Genauck
+              %br
+              Könneritzstraße 11
+              %br
+              04229 Leipzig
+              %a{:href => "mailto:kontakt@enricogenauck.de"} kontakt@enricogenauck.de              
+            .grid_4.links.omega
+              = link_to(host:"twitter.com", section:"enricogenauck")
+              = link_to(host:"github.com", section:"enricogenauck")
+              = link_to(host:"xing.com", section:"profile/Enrico_Genauck")
+
+  :javascript
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25796852-1']);
+    _gaq.push(['_setDomainName', 'enricogenauck.de']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
