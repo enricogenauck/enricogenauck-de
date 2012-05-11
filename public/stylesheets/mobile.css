@@ -1,41 +1,67 @@
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-  margin-left: 10px;
-  margin-right: 10px;
+.container_12 {
+  margin: 0px 20px;
+}
+
+h1 { font-size: 72px; }
+
+cite {
   display: block;
+  max-width: 60%;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.2em;
 }
 
-.alpha,
-.omega {
-  margin-left: 0;
-  margin-right: 0;
+.content, .footer { overflow: hidden; }
+.content, .header, .footer { padding: 20px 0 20px 0; }
+
+.container_12 > .grid_8,
+.content.dark > .container_12 {
+  float: left;
+  width: 80%;
+  font-size: 42px;
+  line-height: 1.2em;
 }
 
-.align_center,
-.align_right {
-  text-align: left;
+.logo.github { display: none; }
+.logo.twitter { display: none; }
+
+.content.dark:before {
+  content: "";
+  margin-left: 20px;
+  margin-top: 50px;
+  background: url('/images/twitter.png') no-repeat center -94px;
+  background-size: 100%;
+  float: left;
+  width: 128px;
+  height: 120px;
 }
 
-.header > div {
-  background: none !important;
-  overflow: hidden;
+.content.light:before {
+  content: "";
+  margin-left: 20px;
+  margin-top: 50px;
+  background: url('/images/octocat.png') no-repeat center -132px;
+  background-size: 100%;
+  float: left;
+  width: 148px;
+  height: 120px;
 }
 
-.logo { display: none !important; }
-.tweet, .commit, .address { float: none !important; }
+.commit p { margin-top: 0px; }
 
-.grid_4 h1 { padding-bottom: 20px; }
+.footer h1 {
+  float: left;
+  font-size: 36px;
+  color: #909090;
+  padding-top: 10px;
+  padding-right: 20px;
+}
 
-.links { margin-top: 20px; padding: 20px; }
-.links:before { content: "Links"; display: block; color: #8D919C; font-size: 48px; margin-bottom: 20px; margin-left: -20px; }
-
+.footer .address {
+  float: left;
+  margin-right: 20px;
+}
+.footer .links a,
+.footer .links { display: block; }
