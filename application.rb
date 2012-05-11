@@ -45,7 +45,7 @@ helpers do
       if cached_tweets = REDIS.get("tweets")
         YAML::load(cached_tweets)
       else
-        unformatted_tweets = Twitter.user_timeline("enricogenauck", :count => 4, :trim => true)
+        unformatted_tweets = Twitter.user_timeline("enricogenauck", :trim => true)[0..3]
         tweets = unformatted_tweets.collect{ |tweet| convert_to_html(tweet.text) }
         REDIS.set("tweets", tweets.to_yaml)
         tweets
