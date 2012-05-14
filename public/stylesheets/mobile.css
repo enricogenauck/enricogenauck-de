@@ -1,16 +1,17 @@
 .container_12 {
   margin: 0px 20px;
+  font-size: 150%;
 }
 
-h1 { font-size: 72px; }
+h1 { font-size: 42px; }
 
 cite {
   display: block;
-  max-width: 60%;
   margin-top: 80px;
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.2em;
+  font-weight: lighter;
 }
 
 .content, .footer { overflow: hidden; }
@@ -18,9 +19,6 @@ cite {
 
 .container_12 > .grid_8,
 .content.dark > .container_12 {
-  float: left;
-  width: 80%;
-  font-size: 42px;
   line-height: 1.2em;
 }
 
@@ -29,39 +27,30 @@ cite {
 
 .content.dark:before {
   content: "";
-  margin-left: 20px;
-  margin-top: 50px;
-  background: url('/images/twitter.png') no-repeat center -94px;
-  background-size: 100%;
-  float: left;
-  width: 128px;
-  height: 120px;
+  background: url('/images/twitter.png') no-repeat center -148px;
+  display: block;
+  width: 100%;
+  height: 148px;
 }
 
 .content.light:before {
   content: "";
-  margin-left: 20px;
-  margin-top: 50px;
-  background: url('/images/octocat.png') no-repeat center -132px;
-  background-size: 100%;
-  float: left;
-  width: 148px;
-  height: 120px;
+  background: url('/images/octocat.png') no-repeat center -190px;
+  display: block;
+  width: 100%;
+  height: 190px;
 }
 
 .commit p { margin-top: 0px; }
 
 .footer h1 {
-  float: left;
   font-size: 36px;
   color: #909090;
-  padding-top: 10px;
-  padding-right: 20px;
+  padding: 20px 0px 40px 0px;
+  text-align: center;
 }
 
-.footer .address {
-  float: left;
-  margin-right: 20px;
-}
-.footer .links a,
-.footer .links { display: block; }
+.footer .links  { margin: 50px 0px; }
+.footer .links  a { margin: 10px 0px; }
+.footer .links,
+.footer .links a { display: block; }

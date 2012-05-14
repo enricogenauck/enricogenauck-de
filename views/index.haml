@@ -5,16 +5,10 @@
     %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8"}
     %link{:href => "/stylesheets/960.min.css",
           :rel => "stylesheet",
-          :type => "text/css",
-          :media => "only screen and (min-width: 990px)"}
-    %link{:href => "/stylesheets/mobile.css",
-          :rel => "stylesheet",
-          :type => "text/css",
-          :media => "only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (max-width: 990px)"}
+          :type => "text/css"}
     %link{:href => "/stylesheets/landscape.css",
           :rel => "stylesheet",
-          :type => "text/css",
-          :media => "only screen and (min-width: 990px)"}
+          :type => "text/css"}
     
     :css
       body {
@@ -23,6 +17,7 @@
         line-height: 1.5em;
         color: #72361b;
         margin: 0px;
+        -webkit-text-size-adjust: 200%;
       }
     
       .header {
