@@ -81,14 +81,14 @@
         .grid_8
           .grid_8
             .commit.grid_4.alpha
-              = haml :_commit, :locals => { :commit => @commits[0] }
+              = haml :_repo, :locals => { :repo => @repos[0] }
             .commit.grid_4.omega
-              = haml :_commit, :locals => { :commit => @commits[1] }
+              = haml :_repo, :locals => { :repo => @repos[1] }
           .grid_8
             .commit.grid_4.alpha
-              = haml :_commit, :locals => { :commit => @commits[2] }
+              = haml :_repo, :locals => { :repo => @repos[2] }
             .commit.grid_4.omega
-              = haml :_commit, :locals => { :commit => @commits[3] }
+              = haml :_repo, :locals => { :repo => @repos[3] }
 
         .logo.github.grid_4
           %a{:href => "https://github.com/enricogenauck"} &nbsp;

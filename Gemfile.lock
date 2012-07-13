@@ -1,58 +1,70 @@
+GIT
+  remote: git://github.com/pengwynn/octokit.git
+  revision: b2331c7060097c3e9b1ed7f9781e33078af8e6d9
+  tag: v1.9.1
+  specs:
+    octokit (1.9.1)
+      addressable (~> 2.2)
+      faraday (~> 0.8)
+      faraday_middleware (~> 0.8)
+      hashie (~> 1.2)
+      multi_json (~> 1.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.2.6)
-    api_cache (0.2.3)
-    crack (0.1.8)
-    faraday (0.7.4)
-      addressable (~> 2.2.6)
-      multipart-post (~> 1.1.0)
-      rack (< 2, >= 1.1.0)
-    faraday_middleware (0.7.0)
-      faraday (~> 0.7.3)
-    haml (3.1.2)
-    hashie (1.0.0)
-    httparty (0.7.8)
-      crack (= 0.1.8)
-    mechanize (2.0.1)
-      net-http-digest_auth (>= 1.1.1, ~> 1.1)
-      net-http-persistent (~> 1.8)
-      nokogiri (~> 1.4)
-      webrobots (>= 0.0.9, ~> 0.0)
-    multi_json (1.0.3)
-    multi_xml (0.2.2)
-    multipart-post (1.1.3)
-    net-http-digest_auth (1.1.1)
-    net-http-persistent (1.8.1)
-    nokogiri (1.5.0)
-    octopi (0.4.5)
-      api_cache
-      httparty (>= 0.4.5)
-      mechanize (>= 0.9.3)
-      nokogiri (>= 1.3.1)
-    rack (1.3.2)
-    redis (2.2.2)
-    simple_oauth (0.1.5)
-    sinatra (1.2.6)
-      rack (~> 1.1)
-      tilt (< 2.0, >= 1.2.2)
-    tilt (1.3.2)
-    twitter (1.6.1)
-      faraday (~> 0.7.4)
-      faraday_middleware (~> 0.7.0)
-      hashie (~> 1.0.0)
-      multi_json (~> 1.0.0)
-      multi_xml (~> 0.2.0)
-      simple_oauth (~> 0.1.5)
-    webrobots (0.0.11)
-      nokogiri (>= 1.4.4)
+    addressable (2.2.8)
+    bond (0.4.2)
+    faraday (0.8.1)
+      multipart-post (~> 1.1)
+    faraday_middleware (0.8.8)
+      faraday (< 0.9, >= 0.7.4)
+    haml (3.1.6)
+    hashie (1.2.0)
+    multi_json (1.3.6)
+    multipart-post (1.1.5)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
+    rack-test (0.6.1)
+      rack (>= 1.0)
+    rake (0.8.7)
+    redis (3.0.1)
+    ripl (0.7.0)
+      bond (~> 0.4.2)
+    ripl-multi_line (0.3.0)
+      ripl (>= 0.3.6)
+    ripl-rack (0.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5)
+      ripl (>= 0.3.5)
+    shotgun (0.9)
+      rack (>= 1.0)
+    simple_oauth (0.1.8)
+    sinatra (1.3.2)
+      rack (>= 1.3.6, ~> 1.3)
+      rack-protection (~> 1.2)
+      tilt (>= 1.3.3, ~> 1.3)
+    tilt (1.3.3)
+    tux (0.3.0)
+      ripl (>= 0.3.5)
+      ripl-multi_line (>= 0.2.4)
+      ripl-rack (>= 0.2.0)
+      sinatra (>= 1.2.1)
+    twitter (3.1.1)
+      faraday (~> 0.8)
+      multi_json (~> 1.3)
+      simple_oauth (~> 0.1.6)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   haml
-  octopi
+  octokit!
+  rake
   redis
+  shotgun
   sinatra
+  tux
   twitter

@@ -2,11 +2,11 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 require 'twitter'
-require 'octopi'
+require 'octokit'
 
 configure do
   require 'redis'
-  uri = URI.parse(ENV["REDISTOGO_URL"] || "127.0.0.1")
+  uri = URI.parse(ENV["REDISTOGO_URL"] || "redis://127.0.0.1:6379")
   REDIS = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
 end
 
@@ -50,27 +50,17 @@ helpers do
         REDIS.set("tweets", tweets.to_yaml)
         tweets
       end
-    rescue Twitter::BadRequest
+    rescue
       []
     end
   end
   
-  def retrieve_commits
+  def retrieve_repos
     if raw_commits = REDIS.get("commits")
       YAML::load(raw_commits)
     else
-      begin
-        commits = Octopi::Repository.find(:user => "enricogenauck").
-                                     map(&:commits).map{|commits| commits.
-                                     sort_by(&:authored_date).last}.flatten
-        commits = commits.sort_by(&:authored_date).reverse
-      rescue
-        commits = []
-      end
-      one_day_livetime = 24 * 60 * 60
-      REDIS.setex("commits", one_day_livetime, commits.to_yaml)
-      commits
-    end    
+      Octokit.repositories("enricogenauck")
+    end
   end
   
   def link_to(args = {})
@@ -82,7 +72,7 @@ end
 
 get '/' do
   @tweets = retrieve_tweets
-  @commits = retrieve_commits
+  @repos = retrieve_repos
 
   haml :index
 end
