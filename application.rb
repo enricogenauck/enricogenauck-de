@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'bundler'
 require 'sinatra'
 require 'haml'
 require 'twitter'
