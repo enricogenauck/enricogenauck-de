@@ -1,15 +1,3 @@
-GIT
-  remote: git://github.com/pengwynn/octokit.git
-  revision: b2331c7060097c3e9b1ed7f9781e33078af8e6d9
-  tag: v1.9.1
-  specs:
-    octokit (1.9.1)
-      addressable (~> 2.2)
-      faraday (~> 0.8)
-      faraday_middleware (~> 0.8)
-      hashie (~> 1.2)
-      multi_json (~> 1.3)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -23,6 +11,12 @@ GEM
     hashie (1.2.0)
     multi_json (1.3.6)
     multipart-post (1.1.5)
+    octokit (1.9.1)
+      addressable (~> 2.2)
+      faraday (~> 0.8)
+      faraday_middleware (~> 0.8)
+      hashie (~> 1.2)
+      multi_json (~> 1.3)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -61,7 +55,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
-  octokit!
+  octokit
   rake
   redis
   shotgun

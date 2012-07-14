@@ -3,7 +3,7 @@ source :rubygems
 gem 'sinatra'
 gem 'haml'
 gem 'twitter'
-gem 'octokit', :git => "git://github.com/pengwynn/octokit.git", :tag => "v1.9.1"
+gem 'octokit'
 gem 'redis'
 gem 'rake'
 
