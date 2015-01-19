@@ -21,11 +21,11 @@
 		containers: '100%',
 		breakpoints: {
 			global: { href: '<%= site.asset_path("style") %>', grid: { gutters: ['2.5em', 0] } },
-			xlarge: { media: '(max-width: 1800px)', href: '<%= site.asset_path("style-xlarge.css") %>' },
-			large: { media: '(max-width: 1280px)', href: '<%= site.asset_path("style-large.css") %>"', grid: { gutters: ['2em', 0] } },
-			medium: { media: '(max-width: 980px)', href: '<%= site.asset_path("style-medium.css") %>"'},
-			small: { media: '(max-width: 736px)', href: '<%= site.asset_path("style-small.css") %>"', grid: { gutters: ['1.5em', 0], zoom: 2 }, viewport: { scalable: false } },
-			xsmall: { media: '(max-width: 480px)', href: '<%= site.asset_path("style-xsmall.css") %>"', grid: { zoom: 3 } }
+			xlarge: { media: '(max-width: 1800px)', href: '<%= site.asset_path("style-xlarge") %>' },
+			large: { media: '(max-width: 1280px)', href: '<%= site.asset_path("style-large") %>', grid: { gutters: ['2em', 0] } },
+			medium: { media: '(max-width: 980px)', href: '<%= site.asset_path("style-medium") %>'},
+			small: { media: '(max-width: 736px)', href: '<%= site.asset_path("style-small") %>', grid: { gutters: ['1.5em', 0], zoom: 2 }, viewport: { scalable: false } },
+			xsmall: { media: '(max-width: 480px)', href: '<%= site.asset_path("style-xsmall"); %>', grid: { zoom: 3 } }
 		}
 	});
 
