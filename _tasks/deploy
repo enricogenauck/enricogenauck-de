@@ -1,0 +1,4 @@
+#!/bin/bash
+
+jekyll build
+rsync -v -rz --checksum --delete _site/ us:~/html/

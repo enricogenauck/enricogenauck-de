@@ -1,0 +1,33 @@
+---
+layout: default
+navigation: home
+---
+
+.row
+  .small-6.small-centered.columns(style="text-align: center;")
+    %img.portrait(src="images/portrait.jpg")
+
+.row
+  .small-12.small-centered.columns
+    .eg-title-row
+      %h1.eg-title(style="text-align: center;")
+        %span Enrico Genauck
+
+.row
+  %h2 Kontaktieren Sie mich
+
+  %form(name="sentMessage" id="contactForm" data-abide)
+
+    .input-wrapper
+      %label Name
+      %input(id="name" type="text" placeholder="Name" required)
+
+    .input-wrapper
+      %label E-Mail
+      %input(id="email" type="text" placeholder="E-Mail" required)
+
+    .input-wrapper
+      %label Nachricht
+      %textarea(id="message" placeholder="Nachricht" required rows="5")
+
+    %button(type="submit") Absenden

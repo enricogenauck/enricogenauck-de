@@ -1,0 +1,36 @@
+#message p {
+  font-size: 14pt;
+}
+
+#message p:nth-child(2) {
+  margin-bottom: 1em;
+}
+
+#message h2 {
+  font-size: 22pt;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  color: black;
+}
+
+#message .confirmation {
+  display: none;
+  color: white;
+}
+
+// Submitted form
+#message:target .confirmation {
+  display: inherit;
+}
+#message:target .actions .submit {
+  display: none;
+}
+#message:target input,
+#message:target textarea {
+  filter:     alpha(opacity = 40);    /* IE 6, 7, 8 */
+  -ms-filter: "alpha(opacity = 40)";  /* ab IE 8 zusätzlich möglich */
+  opacity:    .40;                    /* alle anderen Browser einschließlich IE 9 */
+}

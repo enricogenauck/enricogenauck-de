@@ -1,0 +1,11 @@
+safe:        false
+url:         http://localhost:4000
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+future:      true
+permalink:   date
+exclude:     [bin, tasks, docs, Gemfile, Gemfile.lock]
+
+sass:
+    sass_dir: css
