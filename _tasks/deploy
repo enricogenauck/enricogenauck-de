@@ -1,4 +1,3 @@
 #!/bin/bash
 
-jekyll build
-rsync -v -rz --checksum --delete _site/ us:~/html/
+time -p sh -c 'jekyll build; rsync -v -rz --checksum --delete _site/ us:~/html/'
