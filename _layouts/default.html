@@ -5,6 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="{% asset_path favicon.ico %}"/>
     <!--[if lte IE 8]><script src="/css/ie/html5shiv.js"></script><![endif]-->
     {% javascript init.js %}
     <noscript>
@@ -18,7 +19,7 @@
 
     <!-- Header -->
       <header id="header">
-        <a href="/" class="image avatar"><img src="/images/avatar.jpg" alt="" /></a>
+        <a href="/" class="image avatar"><img src="{% asset_path avatar.jpg %}" alt="" /></a>
         <h1>
           <strong>Ich bin Enrico Genauck</strong>, Freelancer, <br />Senior Ruby on Rails Entwickler.
         </h1>
