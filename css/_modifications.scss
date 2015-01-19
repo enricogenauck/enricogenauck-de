@@ -21,6 +21,11 @@ input[type="email"] {
   color: white;
 }
 
+.copyright li:nth-child(2),
+.copyright li:nth-child(3) {
+  color: lighten($color-accent2-fg-light, 90%);
+}
+
 // Submitted form
 #message:target .confirmation {
   display: inherit;
