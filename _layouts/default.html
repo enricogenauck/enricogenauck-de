@@ -11,9 +11,9 @@
     {% javascript vendor/skel.min.js %}
     {% javascript init.js %}
     <noscript>
-      <link rel="stylesheet" href="/css/skel.css" />
-      <link rel="stylesheet" href="/css/style.css" />
-      <link rel="stylesheet" href="/css/style-xlarge.css" />
+      {% stylesheet skel %}
+      {% stylesheet style %}
+      {% stylesheet style-xlarge %}
     </noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
   </head>

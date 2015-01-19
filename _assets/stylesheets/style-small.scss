@@ -1,6 +1,3 @@
----
----
-
 @import 'vars';
 @import 'mixins';
 
@@ -60,7 +57,7 @@ $size-header-pad:		1.5em;
 
 	#header {
 		padding: ($size-header-pad * 1.5) $size-header-pad;
-		
+
 		h1 {
 			font-size: 1.35em;
 		}
@@ -71,7 +68,7 @@ $size-header-pad:		1.5em;
 	#footer {
 		padding: ($size-header-pad * 1.5) $size-header-pad;
 	}
-	
+
 /* Main */
 
 	#main {
@@ -82,12 +79,12 @@ $size-header-pad:		1.5em;
 			padding: ($size-header-pad * 1.5) 0 0 0;
 		}
 	}
-	
+
 /* Poptrox */
 
 	.poptrox-popup {
 		border-radius: 0;
-		
+
 		.nav-next,
 		.nav-previous {
 			&:before {
