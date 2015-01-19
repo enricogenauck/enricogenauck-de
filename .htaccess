@@ -1,3 +1,8 @@
+# Normalize hostname
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !=www.enricogenauck.de
+RewriteRule (.*) http://www.enricogenauck.de/$1 [R=301,L]
+
 # Enable compression
 AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript text/javascript
 
