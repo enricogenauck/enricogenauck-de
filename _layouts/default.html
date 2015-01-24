@@ -6,46 +6,47 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="shortcut icon" href="{% asset_path favicon.ico %}"/>
-    <!--[if lte IE 8]><script src="/css/ie/html5shiv.js"></script><![endif]-->
-    {% javascript init.js %}
-    <noscript>
-      {% stylesheet skel %}
-      {% stylesheet style %}
-      {% stylesheet style-xlarge %}
-    </noscript>
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    {% stylesheet style %}
   </head>
-  <body id="top">
+  <body>
 
     <!-- Header -->
-      <header id="header">
-        <a href="/" class="image avatar"><img src="{% asset_path avatar.jpg %}" alt="" /></a>
-        <h1>
-          <strong>Ich bin Enrico Genauck</strong>, Freelancer, <br />Senior Ruby on Rails Entwickler.
-        </h1>
-      </header>
+    <header class="pure-menu pure-menu-open pure-menu-horizontal">
+      <a href="/" class="pure-menu-heading">Home</a>
+      <ul>
+        <li><a href="/impressum">Impressum</a></li>
+        <li><a href="/datenschutz">Datenschutz</a></li>
+      </ul>
+    </header>
 
     <!-- Main -->
-      <div id="main">
+    <div class="pure-g">
+      <div class="pure-u-1-24 pure-u-md-1-5"></div>
+      <div class="pure-u-22-24 pure-u-md-3-5">
         {{content}}
       </div>
+      <div class="pure-u-1-24 pure-u-md-1-5"></div>
+    </div>
 
     <!-- Footer -->
-      <footer id="footer">
+<!--       <footer id="footer">
         <ul class="icons">
-          <li><a href="https://www.xing.com/profile/Enrico_Genauck" class="icon fa-xing"><span class="label">Dribbble</span></a></li>
-          <li><a href="https://twitter.com/enricogenauck" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="https://github.com/enricogenauck" class="icon fa-github"><span class="label">Github</span></a></li>
-          <li><a href="mailtto:kontakt@enricogenauck.de" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-        </ul>
-        <ul class="copyright">
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/datenschutz">Datenschutz</a></li>
+          <li><a href="https://www.xing.com/profile/Enrico_Genauck" class="fa fa-xing"><span class="label">Xing</span></a></li>
+          <li><a href="https://twitter.com/enricogenauck" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://github.com/enricogenauck" class="fa fa-github"><span class="label">Github</span></a></li>
+          <li><a href="mailtto:kontakt@enricogenauck.de" class="fa fa-envelope-o"><span class="label">Email</span></a></li>
         </ul>
       </footer>
-
+ -->
     <!-- Google Analytics Tracking -->
-    {% include google_analytics_tracking.html %}
+    <!-- {% include google_analytics_tracking.html %} -->
   </body>
 </html>

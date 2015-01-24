@@ -1,36 +1,14 @@
-#message p {
-  font-size: 14pt;
-}
-
-#message p:nth-child(2) {
-  margin-bottom: 1em;
-}
-
-#message h2 {
-  font-size: 22pt;
-}
-
-textarea,
-input[type="text"],
-input[type="email"] {
-  color: black;
-}
+@import 'vars';
 
 #message .confirmation {
   display: none;
-  color: white;
+  color: #1F9186;
 }
 
-.copyright li:nth-child(2),
-.copyright li:nth-child(3) {
-  color: lighten($color-accent2-fg-light, 90%);
-}
-
-// Submitted form
 #message:target .confirmation {
   display: inherit;
 }
-#message:target .actions .submit {
+#message:target button {
   display: none;
 }
 #message:target input,
@@ -38,4 +16,8 @@ input[type="email"] {
   filter:     alpha(opacity = 40);    /* IE 6, 7, 8 */
   -ms-filter: "alpha(opacity = 40)";  /* ab IE 8 zusätzlich möglich */
   opacity:    .40;                    /* alle anderen Browser einschließlich IE 9 */
+}
+
+button {
+  margin-top: 0.3em;
 }

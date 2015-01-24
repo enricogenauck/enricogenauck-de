@@ -3,44 +3,58 @@ layout: default
 navigation: home
 ---
 
-<!-- Message -->
-<section id="message">
-  <h2>Kontaktieren Sie mich!</h2>
+<section>
+  <h1>
+    <strong>Ich bin Enrico Genauck</strong>, Freelancer, <br />Senior Ruby on Rails Entwickler.
+  </h1>
   <p>
     Seit über sieben Jahren bin ich professionell als Ruby on Rails Entwickler tätig.<br/>
     Ich habe mit meinen Fähigkeiten an Social Networks, Couponing- sowie E-Commerce-Plattformen gearbeitet und sie von der Idee bis zur Marktreife und darüber hinaus begleitet.
   </p>
   <p>
     Erfahren Sie mehr über mein <a href="https://www.xing.com/profile/Enrico_Genauck">Xing Profil</a>
-    oder sprechen Sie mich direkt an:
+    oder sprechen Sie mich direkt an.
   </p>
-  <div class="row">
-    <div class="8u 12u$(2)">
-      <form accept-charset="UTF-8" action="https://formkeep.com/f/1d89a8518abc" method="POST">
-        <input type="hidden" name="utf8" value="✓">
-        <div class="row uniform 50%">
-          <div class="6u 12u$(3)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-          <div class="6u$ 12u$(3)"><input type="email" name="email" id="email" placeholder="E-Mail" /></div>
-          <div class="12u$"><textarea name="message" id="message" placeholder="Ihre Nachricht" rows="4"></textarea></div>
+</section>
+
+<!-- Message -->
+<section id="message" class="pure-g">
+  <!-- Form -->
+  <div class="pure-u-1 pure-u-md-3-5">
+    <form class="pure-form pure-form-stacked" accept-charset="UTF-8" action="https://formkeep.com/f/1d89a8518abc" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <input type="text" name="name" id="name" placeholder="Name" />
         </div>
-        <ul class="actions">
-          <li class="submit"><input type="submit" value="Absenden" /></li>
-          <li class="confirmation">Vielen Dank für Ihre Nachricht, ich werde mich gerne in Kürze bei Ihnen melden.</li>
-        </ul>
-      </form>
-    </div>
-    <div class="4u$ 12u$(2)">
-      <ul class="labeled-icons">
-        <li>
-          <h3 class="icon fa-home"><span class="label">Address</span></h3>
-          Flughafenstr. 25<br />
-          12053 Berlin<br />
-        </li>
-        <li>
-          <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
-          <a href="mailto:kontakt@enricogenauck.de">kontakt@enricogenauck.de</a>
-        </li>
-      </ul>
-    </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <input type="email" name="email" id="email" placeholder="E-Mail" />
+        </div>
+        <div class="pure-u-1">
+          <textarea name="message" id="message" placeholder="Nachricht" rows="4"></textarea>
+        </div>
+        <div class="pure-u-1">
+          <button type="submit" class="pure-button pure-button-primary">Absenden</button>
+          <div class="confirmation">
+            Vielen Dank für Ihre Nachricht, ich werde mich gerne in Kürze bei Ihnen melden.
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Adresses -->
+  <div class="pure-u-1 pure-u-md-2-5">
+    <ul class="labeled-icons">
+      <li>
+        <h3 class="fa fa-home"><span class="label">Address</span></h3>
+        Flughafenstr. 25<br />
+        12053 Berlin<br />
+      </li>
+      <li>
+        <h3 class="fa fa-envelope-o"><span class="label">Email</span></h3>
+        <a href="mailto:kontakt@enricogenauck.de">kontakt@enricogenauck.de</a>
+      </li>
+    </ul>
   </div>
 </section>
