@@ -1,0 +1,18 @@
+footer {
+  margin: $margin-box*3 0 0 0;
+}
+
+footer ul {
+  background: white;
+  text-align: center;
+  padding: $margin-box 0 0 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 $margin-box;
+}
+
+footer a {
+  text-decoration: none;
+}
