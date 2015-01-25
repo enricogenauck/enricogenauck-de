@@ -1,19 +1,21 @@
 @import 'vars';
 @import 'contact_form';
 @import 'labeled_icons';
+@import 'header';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200;400');
 
 // General
 body {
-	background: #fdfdfd;
-	color: $black;
-	font-size: 14pt;
-	line-height: 1.5;
+  background: #fdfdfd;
+  color: $black;
+  font-size: 14pt;
+  line-height: 1.5;
 }
 
 h1 {
-	font-weight: 200;
-	font-size: 180%;
+  font-weight: 200;
+  font-size: 180%;
+  margin: 0;
 }
 h1 strong { font-weight: 400; }
 
@@ -25,32 +27,33 @@ h1 strong { font-weight: 400; }
     padding-bottom: 0.2em;
 }
 a {
-	color: #0071E2;
+  color: #0071E2;
 }
 
 section {
-	margin-bottom: $margin-box*3;
+  margin-bottom: $margin-box*3;
 }
 
-// Header
-header {
-	display: inline-block;
-	font-size: 80%;
+section#greeting {
+  margin-top: $margin-box*2;
+
+  .avatar.image img {
+    border-radius: 2000px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
 }
-.pure-menu.pure-menu-open,
-.pure-menu.pure-menu-horizontal li .pure-menu-children {
-	background: #fdfdfd;
-}
-header ul { float: right; }
 
 // Contact form
 #message input[type="text"],
 #message input[type="email"],
 #message textarea {
-	width: 100%;
+  width: 100%;
 }
 
 // Colored text sections
 .c-blue {
-	color: $c-blue;
+  color: $c-blue;
 }

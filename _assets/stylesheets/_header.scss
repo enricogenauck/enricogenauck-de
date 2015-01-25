@@ -1,0 +1,11 @@
+@import 'vars';
+
+header {
+  display: inline-block;
+  font-size: 80%;
+}
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+  background: #fdfdfd;
+}
+header ul { float: right; }
