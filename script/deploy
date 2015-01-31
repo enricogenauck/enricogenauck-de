@@ -1,3 +1,5 @@
 #!/bin/bash
 
-jekyll build -q && rsync -v -rz --checksum --delete _site/ us:~/html/
+script/build && \
+script/test && \
+rsync -v -rz --checksum --delete _site/ us:~/html/
