@@ -8,6 +8,13 @@ navigation: home
   <h1>
     <strong>Ich bin Enrico Genauck</strong>, Freelancer, <br />Senior Ruby on Rails Entwickler.
   </h1>
+  <ul class="post-titles">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
   <p>
     Seit über sieben Jahren bin ich professionell als Ruby on Rails Entwickler tätig.<br/>
     Ich habe mit meinen Fähigkeiten an Social Networks, Couponing- sowie E-Commerce-Plattformen gearbeitet und sie von der Idee bis zur Marktreife und darüber hinaus begleitet.
