@@ -6,7 +6,7 @@ sleep 3
 JOB_ID=$(jobs -l | grep -o ' [0-9]* ')
 
 check-links http://0.0.0.0:4000/ --no-warnings &&
-rawler http://0.0.0.0:4000/ --local --wait 0.1
+rawler http://0.0.0.0:4000/ --local --wait 0.1 --css
 TEST_RESULT=$?
 
 kill $JOB_ID
