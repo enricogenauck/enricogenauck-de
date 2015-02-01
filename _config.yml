@@ -9,3 +9,10 @@ exclude:     [bin, tasks, docs, Gemfile, Gemfile.lock, README.md, vendor]
 
 sass:
     sass_dir: css
+
+assets:
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts

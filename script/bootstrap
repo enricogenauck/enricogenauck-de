@@ -26,7 +26,9 @@ rm -rf $DOCS_DIR/*
 rm -rf $FONTS_DIR/fontello*
 rm -rf $CSS_DIR/*
 cp -R $DOWNLOAD_PATH/* $DOCS_DIR
+
+mv $DOWNLOAD_PATH/css/fontello.css $CSS_DIR/fontello.scss
 cp $DOWNLOAD_PATH/font/* $FONTS_DIR
-cp $DOWNLOAD_PATH/css/* $CSS_DIR
+# cp $DOWNLOAD_PATH/css/* $CSS_DIR
 
 rm -rf .fontello.src .fontello.zip
