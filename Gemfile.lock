@@ -8,8 +8,10 @@ GIT
       nokogiri (~> 1.6)
       trollop (~> 2.0)
 
-PATH
-  remote: /Users/genauck/Dropbox/Projects/rawler
+GIT
+  remote: https://github.com/enricogenauck/rawler.git
+  revision: d638a470ea16abb3e3b6da9d2a1830695ba51378
+  branch: fix-gemspec
   specs:
     rawler (0.1.8)
       nokogiri (~> 1.5)
