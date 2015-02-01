@@ -30,15 +30,23 @@ h1 {
 h1 strong { font-weight: 400; }
 
 .pure-g > div {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-right: 0.5em;
-    padding-bottom: 0.2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 0.5em;
+  padding-bottom: 0.2em;
 }
+
 a {
-  color: #0071E2;
-  color: #B34533;
+  color: $link-red;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(87%, transparent), color-stop(92%, #222), color-stop(95%, #fdfdfd), color-stop(84%, transparent));
+  background-image: -webkit-linear-gradient(to bottom, transparent 94%, $link-red 96%, $link-red 100%);
+  background-image: -moz-linear-gradient(to bottom, transparent 94%, $link-red 96%, $link-red 100%);
+  background-image: -o-linear-gradient(to bottom, transparent 94%, $link-red 96%, $link-red 100%);
+  background-image: linear-gradient(to bottom, transparent 94%, $link-red 96%, $link-red 100%);
+  text-decoration: none;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 section {
@@ -48,6 +56,8 @@ section {
 section#greeting {
   margin-top: $margin-box*2;
 
+  a.avatar { background: none; }
+
   .avatar.image img {
     border-radius: 2000px;
     border: 0;
@@ -55,6 +65,13 @@ section#greeting {
     position: relative;
     width: 100%;
   }
+}
+
+ul.post-titles {
+  padding-left: 0;
+  margin-top: $margin-box*2;
+  margin-bottom: $margin-box*2;
+  list-style-type: none;
 }
 
 .pure-button-primary {

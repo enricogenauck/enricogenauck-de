@@ -8,4 +8,14 @@ header {
 .pure-menu.pure-menu-horizontal li .pure-menu-children {
   background: #fdfdfd;
 }
+
+.pure-menu .pure-menu-heading {
+  text-transform: inherit;
+  font-size: inherit;
+  color: rgb(119, 119, 119);
+}
+.pure-menu .pure-menu-heading.active { color: transparent; }
+
 header ul { float: right; }
+
+header a { background: none; }

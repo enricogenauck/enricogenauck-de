@@ -16,3 +16,16 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/fonts
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

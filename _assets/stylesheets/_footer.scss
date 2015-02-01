@@ -1,18 +1,20 @@
 footer {
   margin: $margin-box*3 0 0 0;
+  padding: $margin-box 0;
 }
 
 footer ul {
+  list-style-type: none;
   background: white;
   text-align: center;
-  padding: $margin-box 0 0 0;
+  margin: 0;
 }
 
-footer ul li {
+footer ul.icons li {
   display: inline-block;
   margin: 0 $margin-box;
 }
 
 footer a {
-  text-decoration: none;
+  background: none;
 }

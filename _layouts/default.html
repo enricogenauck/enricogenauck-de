@@ -20,7 +20,9 @@
 
     <!-- Header -->
     <header class="pure-menu pure-menu-open pure-menu-horizontal">
-      <a href="/" class="pure-menu-heading">Home</a>
+      <a class="pure-menu-heading{% if page.navigation == 'home' %} active{% endif %}" href="/">
+        Home
+      </a>
       <ul>
         <li><a href="/impressum/">Impressum</a></li>
         <li><a href="/datenschutz/">Datenschutz</a></li>
@@ -39,6 +41,9 @@
     <!-- Footer -->
     <footer id="footer">
       <ul class="icons">
+        {% if page.navigation != 'home' %}
+          <li><a href="/">Home</a></li>
+        {% endif %}
         <li><a href="https://www.xing.com/profile/Enrico_Genauck" class="icon-xing"><span class="label">Xing</span></a></li>
         <li><a href="https://twitter.com/enricogenauck" class="icon-twitter"><span class="label">Twitter</span></a></li>
         <li><a href="https://github.com/enricogenauck" class="icon-github-circled"><span class="label">Github</span></a></li>
