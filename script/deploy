@@ -1,5 +1,4 @@
 #!/bin/bash
 
 script/build && \
-script/test && \
-rsync -v -rz --checksum --delete _site/ us:~/html/
+rsync -v -rz --checksum --delete _site/ enricog@enricogenauck.de:~/html/
