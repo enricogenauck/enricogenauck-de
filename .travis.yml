@@ -1,2 +1,2 @@
 language: ruby
-script: script/test
+script: JEKYLL_START_SLEEP=30 script/test
