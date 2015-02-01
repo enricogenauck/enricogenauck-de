@@ -5,7 +5,7 @@ destination: ./_site
 plugins:     ./_plugins
 future:      true
 permalink:   date
-exclude:     [bin, tasks, docs, Gemfile, Gemfile.lock, README.md]
+exclude:     [bin, tasks, docs, Gemfile, Gemfile.lock, README.md, vendor]
 
 sass:
     sass_dir: css
