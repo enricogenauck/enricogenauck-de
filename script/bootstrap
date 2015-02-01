@@ -1,3 +1,32 @@
 #!/bin/bash
 
+FONTS_DIR="./_assets/fonts/fontello"
+CSS_DIR="./_assets/stylesheets/fontello"
+DOCS_DIR="./_docs/fontello"
+FONTELLO_HOST="http://fontello.com"
+
+# set up dependencies
 bundle install
+
+if [ ! -f .fontello ]; then
+  echo "Creating private fontello session id"
+  curl --silent --show-error --fail --output .fontello \
+       --form "config=@${FONTS_DIR}/config.json" \
+       ${FONTELLO_HOST}
+fi
+
+# update icon font
+curl --silent --show-error --fail \
+     --output .fontello.zip \
+     ${FONTELLO_HOST}/`cat .fontello`/get
+unzip .fontello.zip -d .fontello.src
+
+DOWNLOAD_PATH=$(find ./.fontello.src -maxdepth 1 -name 'fontello-*')
+rm -rf $DOCS_DIR/*
+rm -rf $FONTS_DIR/fontello*
+rm -rf $CSS_DIR/*
+cp -R $DOWNLOAD_PATH/* $DOCS_DIR
+cp $DOWNLOAD_PATH/font/* $FONTS_DIR
+cp $DOWNLOAD_PATH/css/* $CSS_DIR
+
+rm -rf .fontello.src .fontello.zip
