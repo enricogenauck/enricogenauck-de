@@ -4,7 +4,7 @@ title: 5 Emails for a happier life
 
 I stumbled upon an article by Eric Barker recently which inspired me immensely. He lists five simple emails to improve your social and professionell life. Granted, maybe some are pretty obvious but it’s good to here them every once in a while. I’ll recap them here just to have a short and condensed version to remind me. You can find more on the scientific background and additional resources in [the original article](http://www.bakadesuyo.com/2013/07/make-your-life-better/).
 
-## Send a friend, family member or co-worker an email to say thanks
+## Send a friend, relative or co-worker an email to say thanks
 Every morning, you could send a friend, family member or co-worker an email to say thanks for something. Gratitude increases happiness and life satisfaction, for you and others.
 
 ## Send your boss an email
