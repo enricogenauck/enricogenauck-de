@@ -1,7 +1,11 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Freelance Ruby On Rails Development – Enrico Genauck</title>
+    {% if page.title %}
+      <title>{{ page.title }}</title>
+    {% else %}
+      <title>Freelance Ruby On Rails Development – Enrico Genauck</title>
+    {% endif %}
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="Ruby on Rails" />
@@ -31,11 +35,11 @@
 
     <!-- Main -->
     <div class="pure-g">
-      <div class="pure-u-1-24 pure-u-md-1-5"></div>
-      <div class="pure-u-22-24 pure-u-md-3-5">
+      <div class="pure-u-1-24 pure-u-md-6-24"></div>
+      <div class="pure-u-22-24 pure-u-md-12-24">
         {{content}}
       </div>
-      <div class="pure-u-1-24 pure-u-md-1-5"></div>
+      <div class="pure-u-1-24 pure-u-md-6-24"></div>
     </div>
 
     <!-- Footer -->
