@@ -1,5 +1,5 @@
 safe:        false
-url:         http://localhost:4000
+url:         http://enricogenauck.de
 source:      .
 destination: ./_site
 plugins:     ./_plugins

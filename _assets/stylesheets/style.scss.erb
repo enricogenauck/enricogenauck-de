@@ -73,9 +73,12 @@ section#greeting {
 }
 
 section.post-footer {
-  margin: $margin-box*4 0 0 0;
+  margin: $margin-box*2 0 0 0;
   font-size: 80%;
-  text-align: center;
+  time {
+    text-align: center;
+    display: block;
+  }
 }
 
 ul.post-titles {
@@ -83,6 +86,10 @@ ul.post-titles {
   margin-top: $margin-box*2;
   margin-bottom: $margin-box*2;
   list-style-type: none;
+}
+#disqus_thread {
+  margin-top: $margin-box*10;
+  margin-bottom: $margin-box*6;
 }
 
 .pure-button-primary {
