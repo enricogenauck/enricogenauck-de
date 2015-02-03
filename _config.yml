@@ -1,5 +1,5 @@
 safe:        false
-url:         http://enricogenauck.de
+url:         https://enricogenauck.de
 source:      .
 destination: ./_site
 plugins:     ./_plugins
