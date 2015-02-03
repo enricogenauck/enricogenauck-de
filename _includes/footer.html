@@ -1,7 +1,11 @@
-<script src="/js/vendor/jquery.js"></script>
-<script src="/js/vendor/fastclick.js"></script>
-<script src="/js/foundation.min.js"></script>
-<script src="/js/custom.js"></script>
-<script>
-  $(document).foundation();
-</script>
+<footer id="footer">
+  <ul class="icons">
+    {% if page.navigation != 'home' %}
+      <li><a href="/">Home</a></li>
+    {% endif %}
+    <li><a href="https://www.xing.com/profile/Enrico_Genauck" class="icon-xing"><span class="label">Xing</span></a></li>
+    <li><a href="https://twitter.com/enricogenauck" class="icon-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href="https://github.com/enricogenauck" class="icon-github-circled"><span class="label">Github</span></a></li>
+    <li><a href="mailto:kontakt@enricogenauck.de" class="icon-mail"><span class="label">Email</span></a></li>
+  </ul>
+</footer>

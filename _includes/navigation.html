@@ -1,31 +1,9 @@
-<div class="hybrid-bar">
-  <div class="row">
-    <nav class="top-bar show-for-medium-up" data-topbar role="navigation">
-      <section class="top-bar-section">
-        <ul class="right">
-          <li {% if page.navigation == 'home' %}class='active'{% endif %}>
-            <a href="/"><span>Home</span></a>
-          </li>
-          <li {% if page.navigation == 'impressum' %}class='active'{% endif %}>
-            <a href="/impressum/"><span>Impressum</span></a>
-          </li>
-        </ul>
-      </section>
-    </nav>
-    <nav class="tab-bar show-for-small-only">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" href="#">
-          <span></span>
-        </a>
-      </section>
-    </nav>
-  </div>
-
-  <aside class="left-off-canvas-menu">
-    <ul class="off-canvas-list">
-      <li class="show-for-small"><label>Foundation</label></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="/impressum/">Impressum</a></li>
-    </ul>
-  </aside>
-</div>
+<header class="pure-menu pure-menu-open pure-menu-horizontal">
+  <a class="pure-menu-heading{% if page.navigation == 'home' %} active{% endif %}" href="/">
+    Home
+  </a>
+  <ul>
+    <li><a href="/impressum/">Impressum</a></li>
+    <li><a href="/datenschutz/">Datenschutz</a></li>
+  </ul>
+</header>
