@@ -56,4 +56,4 @@ Just give me your direct mail address. **I will contact you immediatly** when I'
 
 <!--End mc_embed_signup-->
 
-I promise I won't spam you with boring status updates. It will be just a simple heads up when the time comes. Then we can chat, get to know each other and see if there are some great opportunities for us.
+I promise I won't spam you with boring status updates. It will be just a simple ping when the time comes. Then we can chat, get to know each other and see if there are some great opportunities for us.
