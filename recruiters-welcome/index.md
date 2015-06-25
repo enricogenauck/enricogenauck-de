@@ -4,15 +4,15 @@ comments: false
 layout: post
 ---
 
-You have some great clients which are **looking for a professional rails developer, experienced and product focussed**. You want to provide them with the best candidates you can find on [LinkedIn]( https://www.linkedin.com/in/enricogenauck) , [XING](https://www.xing.com/profile/Enrico_Genauck), [Github](https://github.com/enricogenauck) or even Google.
+You have some great clients who are **looking for a professional rails developer – experienced and product focused**. You want to provide them with the best candidates you can find on [LinkedIn]( https://www.linkedin.com/in/enricogenauck) , [XING](https://www.xing.com/profile/Enrico_Genauck), [Github](https://github.com/enricogenauck) or even Google.
 
-But all comes down to **Timing**. Understandably you want to contact them directly as fast as possible. Talk to them, get to know them. Assert their skills and if they fit the profile. **Your time is valuable**.
+But all comes down to **timing**. Understandably, you want to contact them directly as fast as possible. Talk to them, get to know them. Assert their skills and if they fit the profile. **Your time is valuable**.
 And they value their time as well. Engaged in one or maybe two highly demanding projects they are dedicating their whole effort to the client. As you do. So your mails remain unanswered for days, weeks even. Your calls get ducked.
 And that way maybe both of you miss out on a great fit for the client, the project and the professional freelancer.
 
-**Let's fix this!** There is a better way, a better time to check in. A perfect time to chat, to get to know each other. In German, in English, doesn't matter.
+**Let's fix this!** There is a better way, a better time to check in. A perfect time to chat, to get to know each other. In German or in English, it doesn't matter.
 
-Just give me your direct mail address. **I will contact you immediatly** when I'm available for new and amazing projects, new clients and interesting challanges.
+Just give me your direct mail address. **I will contact you immediately** when I'm available for new and amazing projects, new clients and interesting challenges.
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
@@ -56,4 +56,4 @@ Just give me your direct mail address. **I will contact you immediatly** when I'
 
 <!--End mc_embed_signup-->
 
-I promise I won't spam you with boring status updates. It will be just a simple ping when the time comes. Then we can chat, get to know each other and see if there are some great opportunities for us.
+I promise I won't spam you with boring status updates. I'll give you just a short heads up when the time comes. Then we can chat, get to know each other and see if there are some great opportunities for us.
