@@ -16,7 +16,7 @@ Just give me your direct mail address. **I will contact you immediately** when I
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
-<form action="//enricogenauck.us10.list-manage.com/subscribe/post?u=c5eadfb9c56709c6870acd8dd&amp;id=ebd4eb637f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pure-form pure-form-stacked" target="_blank" novalidate>
+<form action="//enricogenauck.us10.list-manage.com/subscribe/post?u=c5eadfb9c56709c6870acd8dd&amp;id=ebd4eb637f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pure-form pure-form-stacked" novalidate>
     <div id="mc_embed_signup_scroll">
       <div class="mc-field-group pure-g">
         <label for="mce-EMAIL" class="pure-u-1 pure-u-md-1-3">Email Address</span>
@@ -30,13 +30,6 @@ Just give me your direct mail address. **I will contact you immediately** when I
       <div class="mc-field-group pure-g">
         <label for="mce-LNAME" class="pure-u-1 pure-u-md-1-3">Last Name</label>
         <input type="text" value="" name="LNAME" class="required pure-u-1 pure-u-md-2-3" id="mce-LNAME">
-      </div>
-      <div class="mc-field-group pure-g">
-        <label for="mce-LANGUAGE" class="pure-u-1 pure-u-md-1-3">Language</label>
-        <select name="LANGUAGE" class="pure-u-1 pure-u-md-2-3" id="mce-LANGUAGE">
-          <option value="Deutsch">Deutsch</option>
-          <option value="English">English</option>
-        </select>
       </div>
       <div id="mce-responses" class="clear">
         <div class="response" id="mce-error-response" style="display:none"></div>
