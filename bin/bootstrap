@@ -1,4 +1,5 @@
 #!/bin/bash
+# TODO rewrite for docker
 
 FONTS_DIR="./_assets/fonts/fontello"
 CSS_DIR="./_assets/stylesheets/fontello"

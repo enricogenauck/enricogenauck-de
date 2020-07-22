@@ -1,3 +1,4 @@
 #!/bin/bash
+# TODO rewrite for docker
 
 jekyll server $1
