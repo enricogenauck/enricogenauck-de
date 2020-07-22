@@ -1,3 +1,0 @@
-#!/bin/bash
-
-bundle exec jekyll build --no-watch $1
