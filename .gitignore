@@ -2,7 +2,6 @@
 .bundle
 _site/*
 bin/
-_docs/id_rsa_travis-ci.private
 .fontello
 _drafts
 .asset-cache
