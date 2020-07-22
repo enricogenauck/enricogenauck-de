@@ -7,6 +7,6 @@ env:
 before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 script:
-  - script/build $TRAVIS_COMMIT
+  - bin/build $TRAVIS_COMMIT
 after_success:
-  - script/deploy
+  - bin/deploy
