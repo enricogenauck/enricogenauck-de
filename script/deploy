@@ -1,4 +1,4 @@
 #!/bin/bash
 
 script/build && \
-rsync -v -rz --checksum --delete _site/ enricog@enricogenauck.de:~/html/
+docker push enricogenauck/enricogenauck-de
