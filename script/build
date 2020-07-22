@@ -2,4 +2,5 @@
 
 TAG=${1:-`git log -1 --format=%h`}
 
-docker build -t enricogenauck/enricogenauck-de:$TAG .
+docker build -t enricogenauck/enricogenauck-de:$TAG \
+             -t enricogenauck/enricogenauck-de .
