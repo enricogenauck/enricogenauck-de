@@ -1,7 +1,4 @@
-language: ruby
-
-services:
-  - docker
+language: minimal
 
 env:
   global:
@@ -11,6 +8,5 @@ before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 script:
   - script/build $TRAVIS_COMMIT
-  - script/deploy
 after_success:
   - script/deploy
