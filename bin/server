@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # TODO rewrite for docker
 
-jekyll server $1
+# jekyll server $1
+
+BIN_DIR="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+$BIN_DIR/jekyll server $@

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+IMAGE="enricogenauck/jekyll"
+JEKYLL_PORT="0.0.0.0:4000:4000/tcp"
+
+docker build --rm --target builder -t $IMAGE --quiet . &&
+docker run --rm -p $JEKYLL_PORT --volume="$PWD:/src" -it $IMAGE jekyll $@
